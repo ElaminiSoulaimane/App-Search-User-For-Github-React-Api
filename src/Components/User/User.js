@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class User extends Component {
     render() {
@@ -10,7 +11,7 @@ export class User extends Component {
                     <div className="card-body">
                         <h4 className="card-title">{login}</h4>
                         <p className="card-text">
-                            <a href={'/user/'+login} className="btn btn-success">show more</a>
+                            <Link to={'/Users/'+login} className="btn btn-success">show more</Link>
                             <a href={repos_url} className="btn btn-warning">Repositories</a>
                         </p>
                     </div>
